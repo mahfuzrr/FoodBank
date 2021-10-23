@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url('logo/food/bg-3.jpeg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 83.87%;
+}
+
+.header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+#logo{
+    color: white;
+    display: inline-block;
+    transform:translateX(100px);
+    font-family: 'Merriweather', sans-serif;
+    cursor: pointer;
+    line-height: 70px;
+    font-size: 20px;  
+}
+
+#bank{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 5px;
+    color: black;
+}
+
+#menu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#menu ul li{
+    line-height: 70px;
+    margin-right: 50px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400px;
+    transition: color 0.5s;
+}
+
+#menu ul li a:hover{
+    color: #333333;
+}
+
+#search{
+    height: 10px;
+    padding: 15px;
+    width: 120px;
+    margin-right: 20px;
+    transform: translateY(20px);
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+#search::placeholder{
+    font-family: 'Merriweather', sans-serif;
+    color: #e4e4e4;
+    text-align: left;
+}
+
+#search:focus{
+    outline: none;
+}
+
+.text{
+    width: 45%;
+    text-align: justify;
+    transform: translate(430px, 250px);
+}
+
+.text h1{
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700px;
+    font-size: 70px;
+}
+
+.text p{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.btn{
+    width: 35%;
+    transform: translate(540px, 300px);
+}
+
+.btn button{
+    width: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 22px;
+    border: none;
+    font-family: 'Merriweather', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#view{
+    margin-left: 15px;
+    color: #333333;
+    font-weight: bold;
+    background-color: white;
+    transition: background-color, color, 0.5s, 0.5s;
+}
+
+#read{
+    background-color: #12c757;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+#view:hover{
+    background-color: rgb(38, 41, 238);
+    color: white;
+}
+
+#read:hover{
+    background-color: #0d9c44;
+}
+
+/* Pricing Starts */
+
+.pricing{
+    height: 88vh;
+}
+
+.pricee{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    width: 540px;
+    height: 156px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Merriweather', sans-serif;
+}
+
+.two{
+    display: flex;
+    width: 540px;
+    height: 156px;
+    margin-left: 40px;
+}
+
+.third{
+    display: flex;
+    margin-top: 150px;
+    width: 540px;
+    height: 156px;
+}
+
+.four{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 40px;
+    width: 540px;
+    height: 156px;
+}
+
+.img img{
+    width: 185px;
+    height: 177px;
+    pointer-events: none;
+}
+
+/* Pricing End */
+/* 
+Healty Starts */
+
+
+.healthy{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+
+.healthy .left{
+    position: relative;
+    width: 50%;
+    background-color: #f0cf56;
+}
+
+.healthy .right{
+    width: 50%;
+    background-color: #f0cf56;
+}
+
+
+.rightImage img{
+    max-height: 90vh;
+    max-width: 1000px;
+    transform: translate(239px, 0px);
+    background-size: cover;
+    pointer-events: none;
+}
+
+.left .leftText{
+    position: absolute;
+    width: 500px;
+    top: 20%;
+    left: 28%;
+}
+
+.leftText h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 68px;
+    color: white;
+}
+
+.leftText p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.leftText button{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: 240px;
+    border: none;
+    border-radius: 23px;
+    line-height: 1.6;
+    margin-top: 35px;
+    margin-left: 7px;
+    background-color: #12c757;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: background-color, 0.5s;
+    cursor: pointer;
+}
+
+.leftText button:hover{
+    background-color: #0d9c44;
+}
+
+.learn{
+    width: 100%;
+    height: 100vh;
+    background-color: #fafafa;
+    position: relative;
+}
+
+.learn .topText{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 10px 0px 10px;
+}
+.learn .topText h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 60px;
+}
+
+.learn .topText p{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.learn .downImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn .downImage .img1st{
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.img1st{
+    position: relative;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.img1st img{
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+.img1st .overlay1st{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f0cf56a9;
+    height: 0;
+    overflow: hidden;
+    transition: bottom, height, 0.5s, 0.5s;
+    /* border-radius: 50px; */
+}
+
+.img1st:hover .overlay1st{
+    bottom: 0;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.overlay1st .textt{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-20px, 0px);
+    overflow: hidden;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.overlay1st .textt button{
+    margin-top: 10px;
+    margin-left: 28px;
+    width: 100px;
+    padding-top: 7px;
+    padding-bottom:9px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background-color: #12c757;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+}
+
+.overlay1st .textt button:hover{
+    background-color: #0d9c44;
+}
+
+.subscribe{
+    background-color: #f0cf56;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.subscribe .full{
+    width: 700px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.full .mainHead{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Merriweather', sans-serif;
+    color: white;
+}
+
+
+.full .subHead{
+    text-align: center;
+    color: white;
+    width: 550px;
+    transform: translate(90px, 15px);
+}
+.full .subHead a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s;
+}
+
+.mail{
+    transform: translate(115px, 45px);
+}
+
+.mail input{
+    width: 480px;
+    padding: 15px 10px;
+    border: 2px solid #12c757;
+    background-color: #f0cf56;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.mail input:focus{
+    outline:none;
+}
+
+.mail button{
+    width: 480px;
+    padding: 15px 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #12c757;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color, 0.5s;
+}
+
+.mail button:hover{
+    background-color: #0d9c44;
+}
+
+.full .subHead a:hover{
+    color: #12c757;
+}
+.last{
+    height: 33vh;
+    background-color: #333333;
+    position: relative;
+}
+
+footer{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+}
+
+footer a{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    transition: color, 0.5s;
+}
+
+footer a:hover{
+    color: #12c757;
+}
+
+footer .hv{
+    position: relative;
+    display: inline-block;
+}
+
+footer span{
+    background-color: #12c75794;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: -43px;
+    left: 95%;
+    visibility: hidden;
+    z-index: 1;
+    user-select: none;
+}
+
+footer .hv:hover span{
+    visibility: visible;
+}
